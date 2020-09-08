@@ -1,0 +1,109 @@
+body {
+	font-family: 'Roboto',
+	sans-serif;
+	font-size: 16px;
+	color: #000000;
+}
+
+.container {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.btn {
+	display: inline-block;
+	padding: 17px 41px;
+	font-weight: 500;
+	font-size: 17px;
+	line-height: 21px;
+	color: #ffffff;
+	background: #EC1E27;
+	border-radius: 10px;
+	border: 2px solid #ec1e27;
+	text-decoration: none;
+	transition: .2s linear;
+
+	&:hover {
+		// background-color: #ee6b72;
+		background-color: #fff;
+		color: #000;
+		border: 2px solid #ec1e27;
+	}
+}
+
+.title {
+	position: relative;
+	padding-bottom: 10px;
+	font-weight: 700;
+	font-size: 45px;
+	line-height: 53px;
+	color: #000000;
+
+	&::before {
+		content: '';
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		width: 26px;
+		height: 4px;
+		background-color: #C8C8C8;
+	}
+
+	&::after {
+		content: '';
+		position: absolute;
+		left: 26px;
+		bottom: 0;
+		width: 165px;
+		height: 4px;
+		background-color: #EC1E27;
+	}
+}
+
+.reviews__container {
+	overflow: hidden;
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets {
+	bottom: -50px;
+}
+
+.swiper-pagination-bullets {
+	left: 50%;
+	bottom: -50px;
+	transform: translateX(-50%);
+}
+
+.swiper-pagination-bullet {
+	width: 13px;
+	height: 13px;
+	background-color: #FF5252;
+
+	&+.swiper-pagination-bullet {
+		margin-left: 10px;
+	}
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+	width: 35px;
+	height: 35px;
+	top: 75%;
+	outline: none;
+	
+	&::after {
+		content: '';
+	}
+}
+
+.swiper-button-prev {
+	left: -50px;
+	background: url('../images/icons/arrow-prev.svg');
+}
+
+.swiper-button-next {
+	right: -50px;
+	background: url('../images/icons/arrow-next.svg');
+}
