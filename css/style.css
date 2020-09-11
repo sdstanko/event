@@ -193,7 +193,7 @@ body {
   background-size: cover;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .intro {
     padding-top: 69px;
   }
@@ -235,13 +235,6 @@ body {
   justify-content: space-between;
 }
 
-@media (min-width: 769px) and (max-width: 1024px) {
-  .menu__body {
-    flex-direction: column;
-    padding-bottom: 10px;
-  }
-}
-
 .menu__logo {
   z-index: 3;
   transition: 0.2s linear;
@@ -263,7 +256,7 @@ body {
   transition: .2s linear;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .nav {
     display: flex;
     flex-direction: column;
@@ -298,7 +291,7 @@ body {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .nav__link {
     font-size: 24px;
   }
@@ -318,7 +311,7 @@ body {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .nav__link + .nav__link {
     margin: 20px 0 0 0;
   }
@@ -329,7 +322,7 @@ body {
   z-index: 2;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .login {
     display: none;
   }
@@ -357,7 +350,7 @@ body {
   font-weight: 500;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 1025px) {
   .login__btn--media {
     display: none;
   }
@@ -372,7 +365,7 @@ body {
   margin-right: 10px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .burger {
     display: block;
   }
