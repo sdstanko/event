@@ -62,6 +62,11 @@ body {
 	line-height: 53px;
 	color: #000000;
 
+	@media (max-width: 1024px) {
+		font-size: 34px;
+		line-height: 40px;
+	}
+
 	&::before {
 		content: '';
 		position: absolute;
@@ -93,7 +98,7 @@ body {
 
 .swiper-pagination-bullets {
 	left: 50%;
-	bottom: -50px;
+	bottom: 45px;
 	transform: translateX(-50%);
 }
 
@@ -109,10 +114,17 @@ body {
 
 .swiper-button-prev,
 .swiper-button-next {
+	position: absolute;
 	width: 35px;
 	height: 35px;
-	top: 75%;
+	// top: 56%;
+	bottom: 40px;
+	margin: 0;
 	outline: none;
+
+	@media (max-width: 1366px) {
+		bottom: 40px;
+	}
 
 	&::after {
 		content: '';
@@ -120,13 +132,29 @@ body {
 }
 
 .swiper-button-prev {
-	left: -50px;
+	left: 35%;
 	background: url('../images/icons/arrow-prev.svg');
+
+	@media (max-width: 1024px) {
+		left: 300px;
+	}
+
+	@media (max-width: 850px) {
+		left: 20px;
+	}
 }
 
 .swiper-button-next {
-	right: -50px;
+	right: 35%;
 	background: url('../images/icons/arrow-next.svg');
+
+	@media (max-width: 1024px) {
+		right: 300px;
+	}
+
+	@media (max-width: 850px) {
+		right: 20px;
+	}
 }
 
 .ibg {

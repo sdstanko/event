@@ -1,8 +1,8 @@
 let mySwiper = new Swiper('.reviews__container', {
 	speed: 400,
-	spaceBetween: 50,
+	// spaceBetween: 50,
 	loop: false,
-	slidesPerView: 2,
+	// slidesPerView: 2,
 
 	// If we need pagination
 	pagination: {
@@ -15,6 +15,12 @@ let mySwiper = new Swiper('.reviews__container', {
 		prevEl: '.swiper-button-prev',
 	},
 
+	breakpoints: {
+			1024: {
+				slidesPerView: 2,
+				spaceBetween: 50,
+			},
+		}
 })
 
 function ibg() {
