@@ -1,0 +1,177 @@
+html {
+	overflow-x: hidden;
+
+	&.lock {
+		@media (max-width: 768px) {
+			overflow: hidden;
+		}
+	}
+}
+
+body {
+	font-family: 'Roboto',
+		sans-serif;
+	font-size: 16px;
+	color: #000000;
+	overflow-x: hidden;
+}
+
+
+.container {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.btn {
+	display: inline-block;
+	padding: 17px 41px;
+	font-weight: 500;
+	font-size: 17px;
+	line-height: 21px;
+	color: #ffffff;
+	background: #EC1E27;
+	border-radius: 10px;
+	border: 2px solid #ec1e27;
+	text-decoration: none;
+	transition: .2s linear;
+
+	@media (max-width: 1200px) {
+		padding: 15px 36px;
+		font-size: 15px;
+	}
+
+	@media (max-width: 768px) {
+		padding: 13px 30px;
+	}
+
+	&:hover {
+		// background-color: #ee6b72;
+		background-color: #fff;
+		color: #000;
+		border: 2px solid #ec1e27;
+	}
+}
+
+.title {
+	position: relative;
+	padding-bottom: 10px;
+	font-weight: 700;
+	font-size: 45px;
+	line-height: 53px;
+	color: #000000;
+
+	@media (max-width: 1024px) {
+		font-size: 34px;
+		line-height: 40px;
+	}
+
+	&::before {
+		content: '';
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		width: 26px;
+		height: 4px;
+		background-color: #C8C8C8;
+	}
+
+	&::after {
+		content: '';
+		position: absolute;
+		left: 26px;
+		bottom: 0;
+		width: 165px;
+		height: 4px;
+		background-color: #EC1E27;
+	}
+}
+
+.reviews__container {
+	overflow: hidden;
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets {
+	bottom: -50px;
+}
+
+.swiper-pagination-bullets {
+	left: 50%;
+	bottom: 45px;
+	transform: translateX(-50%);
+}
+
+.swiper-pagination-bullet {
+	width: 13px;
+	height: 13px;
+	background-color: #FF5252;
+
+	&+.swiper-pagination-bullet {
+		margin-left: 10px;
+	}
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+	position: absolute;
+	width: 35px;
+	height: 35px;
+	// top: 56%;
+	bottom: 40px;
+	margin: 0;
+	outline: none;
+
+	@media (max-width: 1366px) {
+		bottom: 40px;
+	}
+
+	&::after {
+		content: '';
+	}
+}
+
+.swiper-button-prev {
+	left: 35%;
+	background: url('../images/icons/arrow-prev.svg');
+
+	@media (max-width: 1024px) {
+		left: 300px;
+	}
+
+	@media (max-width: 850px) {
+		left: 20px;
+	}
+}
+
+.swiper-button-next {
+	right: 35%;
+	background: url('../images/icons/arrow-next.svg');
+
+	@media (max-width: 1024px) {
+		right: 300px;
+	}
+
+	@media (max-width: 850px) {
+		right: 20px;
+	}
+}
+
+.ibg {
+
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+}
+
+.ibg img {
+
+	width: 0;
+	height: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	visibility: hidden;
+}
